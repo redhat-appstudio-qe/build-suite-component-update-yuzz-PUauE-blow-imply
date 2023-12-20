@@ -1,0 +1,22 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: multi-component-child-npsd
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: multi-component-child-npsd
+    app.kubernetes.io/part-of: build-suite-component-update-yuzz
+  name: multi-component-child-npsq73e
+spec:
+  port:
+    targetPort: 8081
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: multi-component-child-npsd
+    weight: 100
+status: {}

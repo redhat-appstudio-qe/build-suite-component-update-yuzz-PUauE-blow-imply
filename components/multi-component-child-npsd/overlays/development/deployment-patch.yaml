@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multi-component-child-npsd
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-fmfz-tenant/build-suite-component-update-yuzz/multi-component-child-npsd@sha256:5017f7674ed5f6bd8b0790b905c409f831104e3c88db36f8b3e8c5ca4b95f626
+        name: container-image
+        resources: {}
+status: {}
