@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: multi-component-child-npsd
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-appstudio-qe/build-e2e-fmfz-tenant/build-suite-component-update-yuzz/multi-component-child-npsd@sha256:5017f7674ed5f6bd8b0790b905c409f831104e3c88db36f8b3e8c5ca4b95f626
         imagePullPolicy: Always
         name: container-image
         ports:
